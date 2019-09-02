@@ -1,0 +1,24 @@
+                                                         Atmosphere Project
+
+1.Openshift Cluster Monitoring (Node Status, Container Info, Pod Count, Pod Cpu Usage,Pod Memory Usage (Graph) ) 
+
+2.3scale Metrics (Total API Hits, Total Backend Calls, Top API  )
+
+3.Kafka Monitoring (Kafka topics, usage, TPS )
+
+4.Business Metrics
+	-	ENBD, EI, Liv Application real time mobile users
+	-	ENBD, EI, Liv Application real time online users
+	-	Liv real time credits cards issued (metrics collected by kafka topics), and spend at POS for Liv Credit cards 
+
+
+5.MongoDB Monitoring (MongoDb Cluster Status, No of Db's, Cluster Cpu Usage, Cluster Memory Usage)
+
+
+Note:- 
+
+All those Metrics are shown in customized Grafana Dashboard using various Datasources, mainly used influxDb and Prometheus.
+
+By default Prometheus does not support authentication so we will implement either "nginx reverse proxy"/"APICast Redhat 3scale Gateway" for basic authentication or Token Based authentication.
+
+Customized Grafana Dashboard is running on Surface Hub as UWP Application with anonymous user (Can only view the metrics ).
